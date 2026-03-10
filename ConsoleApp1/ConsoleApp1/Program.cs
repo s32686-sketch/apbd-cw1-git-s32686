@@ -10,3 +10,7 @@ else
 {
     Console.WriteLine("Invalid input. Please enter a valid name.");
 }
+
+Console.Write("Enter your age: ");
+string age = Console.ReadLine();
+Console.WriteLine($"You are {age} years old!");
