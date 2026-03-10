@@ -1,4 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
+static double CalculateAverage(int[] values)
+{
+    double sum = 0;
+    for (int i = 0; i < values.Length; i++)
+    {
+       sum += values[i]; 
+    }
+    return sum / values.Length;
+}
+
+
 Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 
