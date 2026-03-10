@@ -9,8 +9,15 @@ if (name != "" && !int.TryParse(name, out int nameInt))
 else
 {
     Console.WriteLine("Invalid input. Please enter a valid name.");
+    Environment.Exit(0);
 }
 
 Console.Write("Enter your age: ");
 string age = Console.ReadLine();
-Console.WriteLine($"You are {age} years old!");
+
+if (int.TryParse(age, out int ageInt)) {
+    Console.WriteLine($"You are {ageInt} years old.");
+} else {
+    Console.WriteLine("Invalid age. Please enter a number.");
+    Environment.Exit(0);
+}
