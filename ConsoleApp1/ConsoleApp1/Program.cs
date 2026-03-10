@@ -6,7 +6,9 @@ static double CalculateAverage(int[] values)
     {
        sum += values[i]; 
     }
-    return sum / values.Length;
+    double average = sum / values.Length;
+    Console.WriteLine($"Operation successfull, calculated average: {average}");
+    return average;
 }
 
 
