@@ -34,6 +34,15 @@ public int CalculateMin(int[] values)
     return values.Min();
 }
 
+public string CheckScore(int points)
+{
+    if (points >= 60) 
+    {
+        return "SUCCESS";
+    }
+    return "REJECTED";
+}
+
 Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 
