@@ -28,8 +28,15 @@ public int CalculateMin(int[] values)
     {
         throw new ArgumentException("Array cannot be null or empty.");
     }
-    
-    return 0; 
+    int min = values[0];
+    for (int i = 1; i < values.Length; i++)
+    {
+        if (values[i] < min)
+        {
+            min = values[i];
+        }
+    }
+    return min;
 }
 
 Console.Write("Enter your name: ");
