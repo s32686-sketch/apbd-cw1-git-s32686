@@ -11,7 +11,7 @@ static double CalculateAverage(int[] values)
     return average;
 }
 
-CalculateMax(int[] values)
+public int CalculateMax(int[] values)
 {
     int max = values[0];
     for (int i = 0; i < values.Length; i++){
@@ -38,9 +38,9 @@ public string CheckScore(int points)
 {
     if (points >= 60) 
     {
-        return "SUCCESS";
+        return "Pass";
     }
-    return "REJECTED";
+    return "Fail";
 }
 
 Console.Write("Enter your name: ");
